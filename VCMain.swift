@@ -56,6 +56,7 @@ class VCMain: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, NS
         countriesArray = NSMutableArray(contentsOfFile: filePath)
         countriesArray.insertObject("", atIndex: 0)
         countriesArray.insertObject("No country", atIndex: 0)
+        countriesArray.insertObject("pickel", atIndex: 1)
         sectorsArray =  NSMutableArray(contentsOfFile: filePath2)
         sectorsArray.insertObject("", atIndex: 0)
         sectorsArray.insertObject("No sector", atIndex: 0)
@@ -317,7 +318,7 @@ class VCMain: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, NS
         return 1
     }
     
-    
+    //why is this coming up as a "?"
     func PickerView(_pickerView: UIPickerView!, titleForRow row: Int, forComponent component: Int) -> String! {
         var pl: NSString
         if(countryPickerData == countriesArray){
