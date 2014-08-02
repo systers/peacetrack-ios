@@ -79,6 +79,16 @@
                                     <action selector="btnLoad" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qEy-EZ-u0v"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZUh-jF-8xg">
+                                <rect key="frame" x="113" y="443" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="show alert ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlertButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NQX-St-h02"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

@@ -13,6 +13,17 @@ class VCMain: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, NS
         @IBOutlet var txtFullName: UITextField!
         @IBOutlet var txtVolunteerID: UITextField!
    
+    @IBAction func showAlertButtonTapped(sender: AnyObject) {
+        var myAlertView = UIAlertView()
+        
+        myAlertView.title = "iOScreator"
+        myAlertView.message = "Hello, world!"
+        myAlertView.addButtonWithTitle("Dismiss")
+        
+        myAlertView.show()
+    
+    }
+    
     //configure picker views
     var countryPicker = UIPickerView()
     var sectorPicker = UIPickerView()
@@ -88,9 +99,13 @@ class VCMain: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, NS
             
                 newUser.setValue(""+txtFullName.text, forKey: "username")
                 newUser.setValue(""+txtVolunteerID.text, forKey: "password")
-                newUser.setValue(""+countryLabel.text, forKey:"post")  
+                newUser.setValue(""+countryLabel.text, forKey:"post")
                 newUser.setValue(""+sectorLabel.text, forKey:"sector")
             
+            // if email !valid , then (print to console) create and diplay alert view
+            // if any value above is nil, then (print to console) create and display alert view
+            
+            //else
                 //save the object
                 context.save(nil)
                 //placeholder to show an error message
@@ -99,9 +114,13 @@ class VCMain: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, NS
                 println("Object Saved")
                 //test case
                 //println("save button pressed \(txtFullName.text)")
-        
+               //initiate segue to home screen. 
             }
     
+   /* func shouldPerformSegueWithIdentifier(_ identifier: String!,
+        sender sender: AnyObject!) -> Bool
+    */
+   
     //just a test to see loading of all user objects in database in the console
         @IBAction func btnLoadTest(){
         
