@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="nm3-S7-h2V">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="nm3-S7-h2V">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Main - Sign Up-->
+        <!--Sign Up-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="VCMain" customModule="swiftPeaceTrack_3" customModuleProvider="target" sceneMemberID="viewController">
@@ -170,7 +170,7 @@
             </objects>
             <point key="canvasLocation" x="2633" y="384"/>
         </scene>
-        <!--Task Manager View Controller - Cohorts-->
+        <!--Cohorts-->
         <scene sceneID="IYm-rY-wO3">
             <objects>
                 <tableViewController id="oOD-en-pNr" customClass="TaskManagerViewController" customModule="swiftPeaceTrack_3" customModuleProvider="target" sceneMemberID="viewController">
@@ -206,7 +206,7 @@
             </objects>
             <point key="canvasLocation" x="3520" y="384"/>
         </scene>
-        <!--Task Detail View Controller - Task Detail-->
+        <!--Task Detail-->
         <scene sceneID="0Hz-Dv-c0I">
             <objects>
                 <viewController id="UmC-YO-XEw" customClass="TaskDetailViewController" customModule="swiftPeaceTrack_3" customModuleProvider="target" sceneMemberID="viewController">
@@ -307,8 +307,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="rlT-bA-0Hs"/>
-        <segue reference="kIX-eB-L5W"/>
-        <segue reference="93y-Wx-D9B"/>
+        <segue reference="ZI6-yX-H4G"/>
+        <segue reference="DEe-0T-u4e"/>
+        <segue reference="qgz-TM-a6x"/>
     </inferredMetricsTieBreakers>
 </document>

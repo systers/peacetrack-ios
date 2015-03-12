@@ -10,8 +10,8 @@ import CoreData
 class VCMain: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, NSURLConnectionDelegate {
    
     //configure text boxes
-        @IBOutlet var txtFullName: UITextField!
-        @IBOutlet var txtVolunteerID: UITextField!
+    @IBOutlet var txtFullName: UITextField!
+    @IBOutlet var txtVolunteerID: UITextField!
    
     @IBAction func showAlertButtonTapped(sender: AnyObject) {
         var myAlertView = UIAlertView()
@@ -35,8 +35,8 @@ class VCMain: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, NS
     var sectorsArray: NSMutableArray = NSMutableArray()
     
     //configure lables related to picker views
-    @IBOutlet var countryLabel : UILabel = nil
-    @IBOutlet var sectorLabel : UILabel = nil
+    @IBOutlet var countryLabel : UILabel! = nil
+    @IBOutlet var sectorLabel : UILabel! = nil
     
     //get the window ready
     var actionView: UIView = UIView()
@@ -64,11 +64,11 @@ class VCMain: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, NS
         
         var filePath =  NSBundle.mainBundle().pathForResource("Property List", ofType: "plist")
         var filePath2 = NSBundle.mainBundle().pathForResource("sectors", ofType: "plist")
-        countriesArray = NSMutableArray(contentsOfFile: filePath)
+        countriesArray = NSMutableArray(contentsOfFile: filePath!)!
         countriesArray.insertObject("", atIndex: 0)
         countriesArray.insertObject("No country", atIndex: 0)
         countriesArray.insertObject("pickel", atIndex: 1)
-        sectorsArray =  NSMutableArray(contentsOfFile: filePath2)
+        sectorsArray =  NSMutableArray(contentsOfFile: filePath2!)!
         sectorsArray.insertObject("", atIndex: 0)
         sectorsArray.insertObject("No sector", atIndex: 0)
     
@@ -99,8 +99,8 @@ class VCMain: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, NS
             
                 newUser.setValue(""+txtFullName.text, forKey: "username")
                 newUser.setValue(""+txtVolunteerID.text, forKey: "password")
-                newUser.setValue(""+countryLabel.text, forKey:"post")
-                newUser.setValue(""+sectorLabel.text, forKey:"sector")
+                newUser.setValue(""+countryLabel.text!, forKey:"post")
+                newUser.setValue(""+sectorLabel.text!, forKey:"sector")
             
             // if email !valid , then (print to console) create and diplay alert view
             // if any value above is nil, then (print to console) create and display alert view
@@ -133,7 +133,7 @@ class VCMain: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, NS
                     //fixes a bug (optional) objects were always coming back as false.
                     request.returnsObjectsAsFaults = false;
                 //ask the context to execute a fetch request. errors will be handled here.
-                var results:NSArray = context.executeFetchRequest(request, error: nil)
+                var results:NSArray = context.executeFetchRequest(request, error: nil)!
                 //if there are results, loop through them and print them to the console
                 if(results.count > 0){
                         for res in results{
@@ -185,7 +185,7 @@ class VCMain: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, NS
         actionView.addSubview(pickerDateToolbar)
         actionView.addSubview(countryPicker)
         
-        if window {
+        if (window != nil) {
             window!.addSubview(actionView)
         }
         else
@@ -237,7 +237,7 @@ class VCMain: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, NS
         actionView.addSubview(pickerDateToolbar)
         actionView.addSubview(sectorPicker)
         
-        if window {
+        if (window != nil) {
             window!.addSubview(actionView)
         }
         else
@@ -294,7 +294,6 @@ class VCMain: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, NS
    
     func sectorDoneClicked(sender: UIBarButtonItem) {
         
-        
         var myRow = sectorPicker.selectedRowInComponent(0)
         sectorLabel.text = sectorPickerData.objectAtIndex(myRow) as NSString
         
@@ -318,7 +317,7 @@ class VCMain: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, NS
     
     // MARK - Picker delegate
     
-    func pickerView(_pickerView: UIPickerView!, numberOfRowsInComponent component: Int) -> Int {
+    func pickerView(_pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         
         var placeholder = 0
         
@@ -333,12 +332,12 @@ class VCMain: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, NS
     
     
     
-    func numberOfComponentsInPickerView(_pickerView: UIPickerView!) -> Int {
+    func numberOfComponentsInPickerView(_pickerView: UIPickerView) -> Int {
         return 1
     }
     
     //why is this coming up as a "?"
-    func PickerView(_pickerView: UIPickerView!, titleForRow row: Int, forComponent component: Int) -> String! {
+    func PickerView(_pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         var pl: NSString
         if(countryPickerData == countriesArray){
             pl=countryPickerData.objectAtIndex(row) as NSString
