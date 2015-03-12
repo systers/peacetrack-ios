@@ -20,7 +20,7 @@ class TaskDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if task != nil {
-            txtDesc.text = (task as Tasks).desc
+            txtDesc.text = (task as Tasks!).desc
         }
     }
     
@@ -38,18 +38,18 @@ class TaskDetailViewController: UIViewController {
     }
     
     func dismissViewController() {
-        navigationController.popViewControllerAnimated(true)
+        navigationController?.popViewControllerAnimated(true)
     }
     
     func createTask() {
         let entityDescripition = NSEntityDescription.entityForName("Tasks", inManagedObjectContext: managedObjectContext)
-        let task = Tasks(entity: entityDescripition, insertIntoManagedObjectContext: managedObjectContext)
+        let task = Tasks(entity: entityDescripition!, insertIntoManagedObjectContext: managedObjectContext)
         task.desc = txtDesc.text
         managedObjectContext.save(nil)
     }
     
     func editTask() {
-        (task as Tasks).desc = txtDesc.text
+        (task as Tasks!).desc = txtDesc.text
         managedObjectContext.save(nil)
     }
 
