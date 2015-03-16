@@ -1,0 +1,21 @@
+How to open this peacetrack-ios project: 
+1. download Xcode on MAC OS X
+2. download the zip file of peacetrack-ios 
+3. drag all loose files into the folder ‘PEACETRACKiOSS’ EXCEPT down4-25.png , Tasks.swift , and README 
+4. drag Images.xcassets folder into PEACETRACKiOSS folder 
+5. double click on PEACETRACKiOS.xcodeproj to open project (ignore other .xcodeproj file)
+
+Here are some helpful websites for using github with your own version of peacetrack-ios, if you’re new to it as I was. 
+
+https://help.github.com/articles/fork-a-repo/ This one, you should look at first, because it will explain to you how to fork from the systers repo
+
+http://lifehacker.com/5983680/how-the-heck-do-i-use-github# This one, look at next for committing files to github. I wasted countless hours of my life messing around with Xcode’s built in source control. My advise is to follow this guide instead, because you will really understand the process better, and love github instead of disliking it (as I did for so long). It may seem harder to use the terminal and do things manually, but it will save you a lot of time. Feel free to shoot me an email if you run into any issues with github. 
+
+It is likely that I will be in China from 6/18/15-8/14/15 (yay!) but I will probably figure out how to get past the firewall and check my emails. 
+
+
+
+
+
+
+
