@@ -14,7 +14,6 @@
 		188FE1EB1B3D48680018DB93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188FE1E91B3D48680018DB93 /* LaunchScreen.xib */; };
 		188FE1F71B3D48680018DB93 /* PeaceTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FE1F61B3D48680018DB93 /* PeaceTrackTests.swift */; };
 		188FE2011B3D62E70018DB93 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FE2001B3D62E70018DB93 /* LoginViewController.swift */; };
-		188FE2031B3D65CE0018DB93 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FE2021B3D65CE0018DB93 /* SignupViewController.swift */; };
 		18A1B2431B400E6100512610 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A1B2421B400E6100512610 /* NavViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,6 @@
 		188FE1F51B3D48680018DB93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		188FE1F61B3D48680018DB93 /* PeaceTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaceTrackTests.swift; sourceTree = "<group>"; };
 		188FE2001B3D62E70018DB93 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		188FE2021B3D65CE0018DB93 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		18A1B2421B400E6100512610 /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +88,6 @@
 				188FE1E91B3D48680018DB93 /* LaunchScreen.xib */,
 				188FE1DE1B3D48670018DB93 /* Supporting Files */,
 				188FE2001B3D62E70018DB93 /* LoginViewController.swift */,
-				188FE2021B3D65CE0018DB93 /* SignupViewController.swift */,
 				18A1B2421B400E6100512610 /* NavViewController.swift */,
 			);
 			path = PeaceTrack;
@@ -224,7 +221,6 @@
 				188FE2011B3D62E70018DB93 /* LoginViewController.swift in Sources */,
 				18A1B2431B400E6100512610 /* NavViewController.swift in Sources */,
 				188FE1E31B3D48670018DB93 /* ViewController.swift in Sources */,
-				188FE2031B3D65CE0018DB93 /* SignupViewController.swift in Sources */,
 				188FE1E11B3D48670018DB93 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
