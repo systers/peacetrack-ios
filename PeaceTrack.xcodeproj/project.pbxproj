@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183B8D921B8267010084ED86 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183B8D911B8267010084ED86 /* ActivityTableViewController.swift */; };
+		183B8D941B826B530084ED86 /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183B8D931B826B530084ED86 /* ActivityDetailViewController.swift */; };
+		183BA1BA1B83427A0039DDE3 /* MeasurementTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183BA1B91B8342790039DDE3 /* MeasurementTableViewController.swift */; };
+		183BA1BC1B8342C40039DDE3 /* AddMeasurementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183BA1BB1B8342C40039DDE3 /* AddMeasurementViewController.swift */; };
+		183BA1BE1B8343050039DDE3 /* MeasurementDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183BA1BD1B8343050039DDE3 /* MeasurementDetailViewController.swift */; };
 		188FE1E11B3D48670018DB93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FE1E01B3D48670018DB93 /* AppDelegate.swift */; };
 		188FE1E31B3D48670018DB93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FE1E21B3D48670018DB93 /* ViewController.swift */; };
 		188FE1E61B3D48670018DB93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188FE1E41B3D48670018DB93 /* Main.storyboard */; };
@@ -15,6 +20,7 @@
 		188FE1F71B3D48680018DB93 /* PeaceTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FE1F61B3D48680018DB93 /* PeaceTrackTests.swift */; };
 		188FE2011B3D62E70018DB93 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188FE2001B3D62E70018DB93 /* LoginViewController.swift */; };
 		18A1B2431B400E6100512610 /* NavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A1B2421B400E6100512610 /* NavViewController.swift */; };
+		18CC945A1B7F8D8A000F3D27 /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CC94591B7F8D89000F3D27 /* AddActivityViewController.swift */; };
 		18FD4B491B53BC52005D40B8 /* CohortsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD4B481B53BC52005D40B8 /* CohortsTableViewController.swift */; };
 		18FD4B4B1B53C7CD005D40B8 /* AddCohortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FD4B4A1B53C7CC005D40B8 /* AddCohortViewController.swift */; };
 		18FD4B4E1B53CB77005D40B8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18FD4B4C1B53CB76005D40B8 /* Model.xcdatamodeld */; };
@@ -32,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183B8D911B8267010084ED86 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
+		183B8D931B826B530084ED86 /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
+		183BA1B91B8342790039DDE3 /* MeasurementTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementTableViewController.swift; sourceTree = "<group>"; };
+		183BA1BB1B8342C40039DDE3 /* AddMeasurementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMeasurementViewController.swift; sourceTree = "<group>"; };
+		183BA1BD1B8343050039DDE3 /* MeasurementDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasurementDetailViewController.swift; sourceTree = "<group>"; };
 		188FE1DB1B3D48670018DB93 /* PeaceTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeaceTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		188FE1DF1B3D48670018DB93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		188FE1E01B3D48670018DB93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +55,7 @@
 		188FE1F61B3D48680018DB93 /* PeaceTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaceTrackTests.swift; sourceTree = "<group>"; };
 		188FE2001B3D62E70018DB93 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		18A1B2421B400E6100512610 /* NavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavViewController.swift; sourceTree = "<group>"; };
+		18CC94591B7F8D89000F3D27 /* AddActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
 		18FD4B481B53BC52005D40B8 /* CohortsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CohortsTableViewController.swift; sourceTree = "<group>"; };
 		18FD4B4A1B53C7CC005D40B8 /* AddCohortViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCohortViewController.swift; sourceTree = "<group>"; };
 		18FD4B4D1B53CB77005D40B8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -101,6 +113,12 @@
 				18FD4B481B53BC52005D40B8 /* CohortsTableViewController.swift */,
 				18FD4B4A1B53C7CC005D40B8 /* AddCohortViewController.swift */,
 				18FD4B511B53E156005D40B8 /* CohortDetailViewController.swift */,
+				18CC94591B7F8D89000F3D27 /* AddActivityViewController.swift */,
+				183B8D911B8267010084ED86 /* ActivityTableViewController.swift */,
+				183B8D931B826B530084ED86 /* ActivityDetailViewController.swift */,
+				183BA1B91B8342790039DDE3 /* MeasurementTableViewController.swift */,
+				183BA1BB1B8342C40039DDE3 /* AddMeasurementViewController.swift */,
+				183BA1BD1B8343050039DDE3 /* MeasurementDetailViewController.swift */,
 			);
 			path = PeaceTrack;
 			sourceTree = "<group>";
@@ -230,13 +248,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183B8D941B826B530084ED86 /* ActivityDetailViewController.swift in Sources */,
+				183BA1BC1B8342C40039DDE3 /* AddMeasurementViewController.swift in Sources */,
 				18FD4B521B53E156005D40B8 /* CohortDetailViewController.swift in Sources */,
 				188FE2011B3D62E70018DB93 /* LoginViewController.swift in Sources */,
 				18FD4B491B53BC52005D40B8 /* CohortsTableViewController.swift in Sources */,
+				183BA1BA1B83427A0039DDE3 /* MeasurementTableViewController.swift in Sources */,
+				18CC945A1B7F8D8A000F3D27 /* AddActivityViewController.swift in Sources */,
 				18A1B2431B400E6100512610 /* NavViewController.swift in Sources */,
 				18FD4B4E1B53CB77005D40B8 /* Model.xcdatamodeld in Sources */,
+				183B8D921B8267010084ED86 /* ActivityTableViewController.swift in Sources */,
 				188FE1E31B3D48670018DB93 /* ViewController.swift in Sources */,
 				188FE1E11B3D48670018DB93 /* AppDelegate.swift in Sources */,
+				183BA1BE1B8343050039DDE3 /* MeasurementDetailViewController.swift in Sources */,
 				18FD4B4B1B53C7CD005D40B8 /* AddCohortViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
