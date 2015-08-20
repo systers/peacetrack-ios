@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Activity" syncable="YES">
+        <attribute name="activityCohort" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activityDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activityDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="activityOutput" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Cohort" syncable="YES">
+        <attribute name="cohortAgeGroup" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cohortCommPosition" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cohortDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cohortFemaleMembers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cohortMaleMembers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cohortMembers" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cohortNotes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Measurement" syncable="YES">
+        <attribute name="measurementCohort" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="measurementDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="measurementOutcome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="outcomeData" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Activity" positionX="-45" positionY="18" width="128" height="30"/>
+        <element name="Cohort" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="Measurement" positionX="-54" positionY="0" width="128" height="120"/>
+    </elements>
+</model>
